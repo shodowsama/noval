@@ -126,8 +126,9 @@ nav{
         display: block;
     }
     #check:checked ~ .dropdown_menu{
-        right: 0;   
+        right: 0;
     }
+
     #li_order{
         order: -1;
         margin-bottom: 80px;
@@ -139,8 +140,6 @@ nav{
     .headimg_menu{
         display: none;
         position: absolute;
-        /* width: 200px;
-        height: 300px; */
         border-radius: 0;
         top: 80px;
         left: -200px;
@@ -150,54 +149,4 @@ nav{
 }
 
 
-/* 搜尋欄 */
-.home_search{
-    background: white;
-    width: 90%;
-    height: 90dvh;
-    justify-items: center;
-    margin: 3rem 5% 10rem 5%;
-    padding-top: 3rem;
-}
-
-.home_logo{
-    height: 20rem;
-    width: 40rem;
-    box-shadow: 0 2px 5px 0 rgb(0, 0, 0.1);
-}
-
-.search_bar{
-    margin-top: 15px;
-    border: 0.2px solid #433c3c;
-    border-radius: 2rem;
-    line-height: 40px;
-    padding: 2px 10px 2px 30px; 
-    width: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search_bar input[type=text]{
-    font-size: 20px;
-    border: none;
-    outline: none;
-    background: transparent;
-    flex: 1;
-}
-
-.search_bar button{
-    background: transparent;;
-}
-
-.search_bar button span{
-    font-size: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.search_bar button span:hover{
-    cursor: pointer;
-}
 
