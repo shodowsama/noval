@@ -49,9 +49,37 @@ function getSignUpFormErrors(f_name_s, e_input_s, p_input_s, r_p_input_s) {
     return error
 }
 
-const allinput = [f_name,e_input,p_input,r_p_input]
+function getLogInFormErrors(e_input_s, p_input_s) {
+    let error = []
+
+    if (e_input_s === '' || e_input_s == null) {
+        error.push('email is required')
+        e_input.parentElement.classList.add('incorrect')
+    }
+
+    if (p_input_s === '' || p_input_s == null) {
+        error.push('password is required')
+        p_input.parentElement.classList.add('incorrect')
+    }
+
+    return error
+}
+
+
+const allinput = [f_name,e_input,p_input].filter(input => input != null)
 
 allinput.forEach(input => {
+    input.addEventListener('input', () => {
+        if (input.parentElement.classList.contains('incorrect')){
+            input.parentElement.classList.remove('incorrect')
+            error_message.innerText = ''
+        }
+    })
+})
+
+const oneinput = [r_p_input].filter(input => input != null)
+
+oneinput.forEach(input => {
     input.addEventListener('input', () => {
         if (input.parentElement.classList.contains('incorrect')){
             input.parentElement.classList.remove('incorrect')
