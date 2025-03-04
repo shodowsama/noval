@@ -1,0 +1,147 @@
+:root {
+    --base-color: white;
+    --text-color: black;
+    --base-bg-color: rgb(184, 210, 245);
+    --accent-color: rgb(193, 193, 250);
+}
+
+*{
+    padding:0;
+    margin:0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+    color: unset;   
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(190, 187, 187, 0.454);
+}
+
+.outside_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--base-color);
+    width: 1000px;
+    height: 80rem;
+    box-shadow: 0 0.5px 1px 0.5px rgb(57, 55, 55);
+}
+
+.ranking_box{
+    background: var(--base-bg-color);
+    border-radius: 20px;
+    border: 2px solid rgb(118, 118, 241);
+    width: 90%;
+    margin-top: 2rem;
+    height: 100px;
+}
+
+.uprank{
+    display: flex;
+    line-height: 50px;
+    width: 100%;
+}
+
+.downrank{
+    display: flex;
+    line-height: 50px;
+    justify-content: space-around;
+}
+
+.uprank > div{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.uprank_left{
+    padding-left: 20%;
+}
+.uprank_right{
+    padding-right: 20%;
+}
+
+.ranking_box li{
+    display: inline-block;
+
+}
+
+.ranking_box ul li a{
+    color: rgb(38, 38, 155);
+    margin-right: 3px;
+    padding-right:10px;
+    border-right: 0.5px solid rgb(206, 201, 201);
+    font-weight: 450;
+}
+
+.card_box{
+    width: 90%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+}
+
+.card{
+    background: var(--base-bg-color);
+    margin-top: 30px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.card_title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    margin: 10px 0 20px 20px;
+}
+
+.card_content{
+    margin: 5px 20px 10px 30px;
+}
+
+.pages{
+    margin-top: 50px;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.pages ul li{
+    background: var(--base-bg-color);
+
+    line-height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.pages ul li a{
+    display: flex;
+    justify-content: center;  
+    color: rgb(38, 38, 155);
+    border-right: 0.5px solid rgb(206, 201, 201);
+    font-weight: 450;
+    width: 2rem;
+}
+
+.pages ul li .notepage{
+    display: flex;
+    justify-content: center;  
+    width: 4rem;
+    color: rgb(38, 38, 155);
+    border-right: 0.5px solid rgb(206, 201, 201);
+    font-weight: 450;
+}
